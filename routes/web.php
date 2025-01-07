@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserManagementController;
 
 Route::get('/', function () {
-    return view('welcome'); 
+    return view('register'); 
 });
 
 Route::get('/login',[UserManagementController::class,'login'])->name('login');
